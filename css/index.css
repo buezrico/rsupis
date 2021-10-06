@@ -1,5 +1,5 @@
 body {
-  background-color: #78bdcd;
+  background-color: #0f262b;
 }
 
 header {
@@ -8,4 +8,88 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
+
+.wrapper {
+  height: 80%;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 2em;
+  padding: 2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  max-width: 12em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-input {
+  width: 90%;
+  height: 3em;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.login-input:focus {
+  border: 2px solid #009049;
+  outline: none;
+  /* background: white; */
+}
+
+.login-input::placeholder {
+  font-size: 1em;
+  color: rgb(161, 155, 155);
+  font-weight: 600;
+}
+.sign-in-btn {
+  height: 2.5em;
+  width: 40%;
+  border-radius: 0.5em;
+  background: #009049;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-in-btn:hover {
+  background: #034624;
 }
