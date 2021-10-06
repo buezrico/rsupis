@@ -17,7 +17,7 @@ header {
 @media screen and (max-width: 768px) {
   header {
     justify-content: center;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
@@ -26,7 +26,8 @@ header {
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 2em;
-  padding: 3em;
+  padding: 2em;
+  padding-bottom: 0.5em;
   color: white;
   display: flex;
   justify-content: center;
@@ -59,14 +60,14 @@ form {
   border-radius: 0.5em;
   margin-bottom: 2em;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
   padding-left: 1em;
   font-size: 1em;
 }
 
 .login-input:focus {
-  border: 2px solid #009049;
+  border: 2px solid #0b9f97;
   outline: none;
   /* background: white; */
 }
@@ -80,7 +81,7 @@ form {
   height: 2.5em;
   width: 90%;
   border-radius: 0.5em;
-  background: #009049;
+  background: #0b9f97;
   border: none;
   color: white;
   font-size: 1.1em;
@@ -89,7 +90,9 @@ form {
 }
 
 .sign-in-btn:hover {
-  background: #034624;
+  border: 2px solid #0b9f97;
+  background: transparent;
+  color: #0b9f97;
 }
 
 .copyright {
