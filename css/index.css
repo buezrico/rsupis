@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  min-height: 90vh;
   background-image: url("/imgs/bg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,7 +24,7 @@ header {
 }
 
 .wrapper {
-  height: 80%;
+  height: 85%;
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 2em;
