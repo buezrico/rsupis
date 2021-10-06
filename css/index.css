@@ -1,7 +1,11 @@
-h1 {
-  color: green;
+body {
+  background-color: #78bdcd;
 }
 
-i {
-  color: green;
+header {
+  height: 100vh;
+  background-image: url("/imgs/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
 }
