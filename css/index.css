@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  min-height: 90vh;
+  min-height: 95vh;
   background-image: url("/imgs/bg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,9 +11,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 15em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 15em 0 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -28,7 +26,7 @@ header {
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 2em;
-  padding: 2em;
+  padding: 3em;
   color: white;
   display: flex;
   justify-content: center;
@@ -74,13 +72,13 @@ form {
 }
 
 .login-input::placeholder {
-  font-size: 1em;
+  font-size: 0.9em;
   color: rgb(161, 155, 155);
   font-weight: 600;
 }
 .sign-in-btn {
   height: 2.5em;
-  width: 40%;
+  width: 90%;
   border-radius: 0.5em;
   background: #009049;
   border: none;
@@ -92,4 +90,9 @@ form {
 
 .sign-in-btn:hover {
   background: #034624;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2em;
 }
