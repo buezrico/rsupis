@@ -40,6 +40,9 @@ form {
   justify-content: space-around;
   align-items: center;
 }
+.form-group {
+  width: 100%;
+}
 
 .logo {
   display: flex;
@@ -55,7 +58,7 @@ form {
   align-items: center;
 }
 .login-input {
-  width: 90%;
+  width: 100%;
   height: 3em;
   border-radius: 0.5em;
   margin-bottom: 2em;
@@ -66,19 +69,23 @@ form {
   font-size: 1em;
   position: relative;
 }
-i {
+
+.bg {
+  background: yellow;
+}
+
+#toggle-password {
   position: absolute;
   margin-top: 1em;
-  margin-left: 10em;
-  color: rgb(161, 155, 155);
-
-  /* top: 50%; */
+  margin-left: 14em;
+  color: rgb(209, 202, 202);
+  cursor: pointer;
+  z-index: 1;
 }
 
 .login-input:focus {
   border: 2px solid #0b9f97;
   outline: none;
-  /* background: white; */
 }
 
 .login-input::placeholder {
@@ -88,7 +95,7 @@ i {
 }
 .sign-in-btn {
   height: 2.5em;
-  width: 90%;
+  width: 100%;
   border-radius: 0.5em;
   background: #0b9f97;
   border: none;
