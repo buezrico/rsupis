@@ -13,18 +13,27 @@ header {
   align-items: center;
   padding: 2em 15em 0 2em;
 }
-
 @media screen and (max-width: 768px) {
   header {
     justify-content: center;
     padding: 0;
+    ter;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  header {
+    
+    background-size: cover;
+    background-position: center;
   }
 }
 
 .wrapper {
   height: 85%;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  background-color: rgba(6, 18, 20, 0.9);
+
+  box-shadow: 5px 5px 4px rgb(0 0 0 / 100%), 0 8px 16px rgb(0 0 0 / 100%);
   border-radius: 2em;
   padding: 2em;
   padding-bottom: 0.5em;
