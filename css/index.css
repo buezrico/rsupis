@@ -13,18 +13,27 @@ header {
   align-items: center;
   padding: 2em 15em 0 2em;
 }
-
 @media screen and (max-width: 768px) {
   header {
     justify-content: center;
     padding: 0;
+    ter;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  header {
+    
+    background-size: cover;
+    background-position: center;
   }
 }
 
 .wrapper {
   height: 85%;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 5px 5px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  background-color: rgba(6, 18, 20, 0.9);
+
+  box-shadow: 5px 5px 4px rgb(0 0 0 / 100%), 0 8px 16px rgb(0 0 0 / 100%);
   border-radius: 2em;
   padding: 2em;
   padding-bottom: 0.5em;
@@ -40,6 +49,9 @@ form {
   justify-content: space-around;
   align-items: center;
 }
+.form-group {
+  width: 100%;
+}
 
 .logo {
   display: flex;
@@ -49,13 +61,13 @@ form {
   max-width: 10em;
 }
 
-.form-group {
+.form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .login-input {
-  width: 90%;
+  width: 100%;
   height: 3em;
   border-radius: 0.5em;
   margin-bottom: 2em;
@@ -64,12 +76,25 @@ form {
   color: white;
   padding-left: 1em;
   font-size: 1em;
+  position: relative;
+}
+
+.bg {
+  background: yellow;
+}
+
+#toggle-password {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 14em;
+  color: rgb(209, 202, 202);
+  cursor: pointer;
+  z-index: 1;
 }
 
 .login-input:focus {
   border: 2px solid #0b9f97;
   outline: none;
-  /* background: white; */
 }
 
 .login-input::placeholder {
@@ -79,7 +104,7 @@ form {
 }
 .sign-in-btn {
   height: 2.5em;
-  width: 90%;
+  width: 100%;
   border-radius: 0.5em;
   background: #0b9f97;
   border: none;
